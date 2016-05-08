@@ -11,6 +11,22 @@
 	font-weight: bold;
 	font-size: 18px;
 }
+
 .theList {
 	font-family: 'Noto Sans', sans-serif;
+}
+
+.listInfo {
+	font-size: x-small;
+	color: #888;
+	margin-top: -10px;
+}
+
+.listVotes {
+	text-align: right;
+}
+
+.glyphicon-thumbs-up, .glyphicon-thumbs-down {
+	margin-left: 4px;
+	margin-right: 4px;
 }

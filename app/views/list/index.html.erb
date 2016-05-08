@@ -7,11 +7,20 @@
 	<div class='container'>
 		<div class='row'>
 			<h2 class='siteTitle'>ListIt</h2>
-		</div>
-		<div class='row theList'>
+		</div>	
 		<% @List.each do |l| %>
-			<p><%= link_to(l.title, list_path(l)) %></p>
-		<% end %>
+		<div class='row theList'>
+	   		<div class="col-xs-1 listVotes">
+	   			<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+	   			<span><%= l.votes %></span>
+	   			<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+	   		</div>
+			<div class="col-xs-6 listTitle">
+				<p><%= link_to(l.title, list_path(l)) %></p>
+				<p class='listInfo'>Submitted <%= time_ago_in_words(l.created_at) %> ago</p>
+			</div>
+		</div>
+		<% end %>	
 	</div>
 </body>
 </html>

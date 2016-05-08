@@ -1,0 +1,2 @@
+      invoke  active_record
+      create    db/migrate/20160508213958_add_votes_to_lists.rb
