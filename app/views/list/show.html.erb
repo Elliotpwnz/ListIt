@@ -8,10 +8,13 @@
 		<div class='row'>
 			<h2 class='siteTitle'>ListIt</h2>
 		</div>
+		<div class='row'>
+		<%= link_to('Go back', root_url) %>
+		</div>
 		<div class='row theList'>
-		<% @List.each do |l| %>
-			<p><%= link_to(l.title, list_path(l)) %></p>
-		<% end %>
+			<h4><%= @List.title %></h4>
+			<p><%= raw @List.content %></p>
+		</div>
 	</div>
 </body>
 </html>
