@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ListIt. Make some lists.</title>
+</head>
+<body class='theBody'>
+	<div class='container'>
+		<div class='row'>
+			<h2 class='siteTitle'>ListIt</h2>
+		</div>
+		<div class='row theList'>
+		<% @List.each do |l| %>
+			<h4><%= l.title %></h4>
+			<p><%= raw l.content %></p>
+		<% end %>
+	</div>
+</body>
+</html>
