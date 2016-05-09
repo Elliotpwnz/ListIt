@@ -6,7 +6,6 @@
 	padding-left: 5px;
 	margin-bottom: 30px;
 }
-
 .theList h4{
 	font-weight: bold;
 	font-size: 18px;
@@ -24,6 +23,17 @@
 
 .listVotes {
 	text-align: right;
+	color: #c6c6c6;
+	font-weight: bold;
+}
+
+.listTitle {
+	text-align: left;
+}
+
+.gutter-14 > [class^="col-"], .gutter-14 > [class^=" col-"] { /* Changing the gutter width beetween Bootstrap columns*/
+  padding-right: 7px;
+  padding-left: 7px;
 }
 
 .glyphicon-thumbs-up, .glyphicon-thumbs-down {

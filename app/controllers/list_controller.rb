@@ -1,6 +1,6 @@
 class ListController < ApplicationController
 	def index
-		@List = List.all
+		@List = List.order(votes: :desc)
 	end
 
 	def show
