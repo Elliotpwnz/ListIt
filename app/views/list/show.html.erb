@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>ListIt. Make some lists.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 </head>
 <body class='theBody'>
 	<div class='container'>
@@ -16,14 +17,14 @@
 				<h4><%= @List.title %></h4>
 			</div>
 			<div class='row theListDescription'>
-			<div class='col-xs-6 '><p><%= raw @List.description %></p></div>
+			<div class='col-xs-12 col-sm-10 col-md-6 '><p><%= raw @List.description %></p></div>
 			</div>
 			<% @List.items.each do |i| %>
 			<div class='row itemTitle'>
-				<div class='col-xs-6 '><strong><%= i.rank %>. <%= i.title %></strong></div>
+				<div class='col-xs-8 '><strong><%= i.rank %>. <%= i.title %></strong></div>
 			</div>
 			<div class='row itemDescription'>	
-				<div class='col-xs-6'><p><%= i.description %></p></div>
+				<div class='col-xs-12 col-sm-10 col-md-6'><p><%= i.description %></p></div>
 			</div>
 			<% end %>
 		</div>
