@@ -6,5 +6,12 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 10.times do |i|
-	List.create(title: "My list #{i}", content: "5 - This is item 5 <br> 4 - This is item 4 <br> 3 - This is item 3 <br> 2 - This is item 2 <br> 1 - This is item 1", votes: rand(1..100))
+	@my_list = List.create(title: "My list #{i}", description: "This is the description for list #{i}", votes: rand(1..100))
+	10.downto(1) do |j|
+		@my_list.items.create(rank: j, title: "This is item #{j}", description: "Here is how I feel about item #{j}. Lorem ipsum dolor sit amet, 
+			consectetur adipiscing elit. Integer tincidunt augue dui, vel rhoncus libero mollis porta. Proin maximus, massa eget mollis iaculis, 
+			tortor dui auctor quam, ac elementum arcu risus a sem. Praesent tristique lacus massa, at consequat odio rutrum in. Nullam lobortis 
+			risus a finibus maximus. Nulla finibus lorem sit amet interdum congue. Donec convallis euismod dolor, in feugiat dolor ullamcorper at. 
+			Pellentesque libero arcu, pellentesque sed lorem at, cursus placerat justo.")
+	end
 end

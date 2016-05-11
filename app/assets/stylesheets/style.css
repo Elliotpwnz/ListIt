@@ -15,6 +15,14 @@
 	font-family: 'Noto Sans', sans-serif;
 }
 
+.theListTitle { /* Title for the Show route of the List */
+	margin-bottom: 20px;
+}
+
+.theListDescription { /* The description for the Show route of the list */
+	margin-bottom: 20px;
+}
+
 .listInfo {
 	font-size: x-small;
 	color: #888;
@@ -29,6 +37,15 @@
 
 .listTitle {
 	text-align: left;
+}
+
+.itemTitle {
+	margin-bottom: 20px;
+}
+
+.itemDescription {
+	text-indent: 50px;
+	margin-bottom: 20px;
 }
 
 .gutter-14 > [class^="col-"], .gutter-14 > [class^=" col-"] { /* Changing the gutter width beetween Bootstrap columns*/

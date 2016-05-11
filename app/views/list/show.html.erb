@@ -11,10 +11,20 @@
 		<div class='row'>
 		<%= link_to('Go back', root_url) %>
 		</div>
-		<div class='row theList'>
+		<div class='row theListTitle'>
 			<h4><%= @List.title %></h4>
-			<p><%= raw @List.content %></p>
 		</div>
+		<div class='row theListDescription'>
+		<div class='col-xs-6 '><p><%= raw @List.description %></p></div>
+		</div>
+		<% @List.items.each do |i| %>
+		<div class='row itemTitle'>
+			<div class='col-xs-6 '><strong><%= i.rank %>. <%= i.title %></strong></div>
+		</div>
+		<div class='row itemDescription'>	
+			<div class='col-xs-6'><p><%= i.description %></p></div>
+		</div>
+		<% end %>
 	</div>
 </body>
 </html>
