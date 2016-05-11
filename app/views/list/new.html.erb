@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ListIt. Make some lists.</title>
+</head>
+<body class='theBody'>
+	<div class='container'>
+		<div class='row'>
+			<h2 class='siteTitle'>ListIt</h2>
+		</div>
+		<%= form_for :list do |f| %>
+  			<p>
+    			<%= f.label :title %><br>
+    			<%= f.text_field :title %>
+  			</p>
+ 
+  			<p>
+    			<%= f.label :description %><br>
+    			<%= f.text_area :description %>
+  			</p>
+ 
+  			<p>
+    			<%= f.submit %>
+  			</p>
+		<% end %>
+	</div>
+</body>
+</html>

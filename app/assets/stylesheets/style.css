@@ -15,6 +15,14 @@
 	font-family: 'Noto Sans', sans-serif;
 }
 
+.siteFont {
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.newLink {
+	margin-bottom: 20px;
+}
+
 .theListTitle { /* Title for the Show route of the List */
 	margin-bottom: 20px;
 }

@@ -7,10 +7,13 @@
 	<div class='container'>
 		<div class='row'>
 			<h2 class='siteTitle'>ListIt</h2>
+		</div>
+		<div class='row siteFont newLink'>
+			<div class='col-xs-6'><%= link_to('Add new list', new_list_path) %></div>
 		</div>	
 		<% @List.each do |l| %>
 		<div class='row theList gutter-14'>
-	   		<div class="col-xs-1 listVotes">
+	   		<div class="col-xs-3 col-sm-2 col-md-1 listVotes">
 	   			<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
 	   			<span><%= l.votes %></span>
 	   			<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
