@@ -43,6 +43,10 @@
 	font-weight: bold;
 }
 
+.linkMargin {
+	margin-bottom:20px;
+}
+
 .listTitle {
 	text-align: left;
 }

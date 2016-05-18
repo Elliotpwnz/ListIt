@@ -9,21 +9,36 @@
 		<div class='row'>
 			<h2 class='siteTitle'>ListIt</h2>
 		</div>
+		<div class="siteFont">
+		<div class='row linkMargin'>
+			<%= link_to('Go back', root_url) %>
+		</div>
 		<%= form_for :list do |f| %>
-  			<p>
-    			<%= f.label :title %><br>
-    			<%= f.text_field :title %>
-  			</p>
- 
-  			<p>
-    			<%= f.label :description %><br>
-    			<%= f.text_area :description %>
-  			</p>
- 
-  			<p>
-    			<%= f.submit %>
-  			</p>
+  			<div class="row">
+  				<fieldset class="col-xs-10 col-sm-6 col-md-4 form-group">
+    				<%= f.label :title %><br>
+    				<%= f.text_field :title, :class => "form-control" %>
+    			</fieldset>
+  			</div>
+  			<div class="row">
+  				<fieldset class="col-xs-10 col-sm-6 col-md-4 form-group">
+	    			<%= f.label :description %><br>
+	    			<%= f.text_area :description, :class => "form-control" %>
+	    		</fieldset>
+  			</div>
+  			<div class="row">
+  				<fieldset class="col-xs-2 form-group">
+	    			<%= f.label :itemNum, "Number of items" %><br>
+	    			<%= f.number_field :itemNum, :class => "form-control" %>
+	    		</fieldset>
+  			</div>
+  			<div class="row">
+  				<div class="col-xs-4">
+    				<%= f.submit :class => "btn btn-primary", :value => "Make list" %>
+    			</div>
+  			</div>
 		<% end %>
+		</div>
 	</div>
 </body>
 </html>
